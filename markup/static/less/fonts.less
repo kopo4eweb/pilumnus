@@ -1,18 +1,57 @@
-/* Your custom fonts here */
-
-/* Example
+/**  Raleway */
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../fonts/raleway/ralewaybold.eot');
+    src: url('../fonts/raleway/ralewaybold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/ralewaybold.woff') format('woff'),
+    url('../fonts/raleway/ralewaybold.svg#custom_font') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@RalewayBold: 'Raleway Bold', Helvetica, Arial, sans-serif;
 
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/Custom-Font.eot');
-    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Custom-Font.woff') format('woff'),
-         url('../fonts/Custom-Font.svg#custom_font') format('svg');
-    font-weight: 400;       // For normal width. It could has another value
-    font-style: normal;     // Also could has another value
-    }
+    font-family: 'Raleway Regular';
+    src: url('../fonts/raleway/ralewayregular.eot');
+    src: url('../fonts/raleway/ralewayregular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/ralewayregular.woff') format('woff'),
+    url('../fonts/raleway/ralewayregular.svg#custom_font') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@RalewayRegular: 'Raleway Regular', Helvetica, Arial, sans-serif;
 
+/**  Droid Serif */
+@font-face {
+    font-family: 'Droid Serif';
+    src: local('Droid Serif'), local('DroidSerif'),
+    url('../fonts/droidserif/droidserif.woff2') format('woff2'),
+    url('../fonts/droidserif/droidserif.woff') format('woff'),
+    url('../fonts/droidserif/droidserif.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@DroidSerif: 'Droid Serif', Helvetica, Arial, sans-serif;
 
-// Var for using custom font
-@CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
-*/
+/**  Montserrat */
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/montserrat/montserratbold.eot');
+    src: url('../fonts/montserrat/montserratbold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat/montserratbold.woff') format('woff'),
+    url('../fonts/montserrat/montserratbold.svg#custom_font') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@MontserratBold: 'Montserrat Bold', Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/montserrat/montserrat.eot');
+    src: url('../fonts/montserrat/montserrat.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat/montserrat.woff') format('woff'),
+    url('../fonts/montserrat/montserrat.svg#custom_font') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@MontserratRegular: 'Montserrat Regular', Helvetica, Arial, sans-serif;
