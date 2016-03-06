@@ -1,21 +1,21 @@
 doctype html
-html(class="no-js", lang="ru")
+html(class="no-js", lang="en")
 
     include ../modules/head/head
-    include ../modules/example/example
     include ../modules/footer/footer
+    include ../modules/header/header
+    include ../modules/about/about
 
     head
         +head(head.defaults)
     body.page
         |%=symbols=%
 
-        section.page__wrapper
 
-            //- Include your modules here
-            +example()
+        +header(header.defaults)
 
-            .page__buffer
+        +about(about.defaults)
+
 
         .page__footer
             +footer()
