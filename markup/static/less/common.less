@@ -2,10 +2,13 @@
 
 html, body {
     height: 100%;
+    font-size: 16px;
 }
 
 .page {
     // Стили для body
+    background-color: @body_bg_color;
+    background-image: url('%=static=%general/splash.png');
 }
 
 .page__wrapper {
@@ -19,4 +22,9 @@ html, body {
 
 .page__buffer {
     height: 50px;
+}
+
+header, section {
+    padding: 0;
+    margin: 0;
 }
