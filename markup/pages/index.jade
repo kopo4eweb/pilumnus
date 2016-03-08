@@ -11,14 +11,14 @@ html(class="no-js", lang="en")
     body.page
         |%=symbols=%
 
-
         +header(header.defaults)
 
-        +about(about.defaults)
+        .page__content
 
+            +about(about.defaults)
 
-        .page__footer
-            +footer()
+            .page__footer
+                +footer()
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();
