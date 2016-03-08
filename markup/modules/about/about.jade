@@ -1,0 +1,11 @@
+mixin about(data)
+    article.page__about
+        .about__box
+            .about__text-content
+                h2.about__text-content_title #{data.title}
+                .about__text-content_description
+                    != data.text
+                .about__text-content_link_wrap
+                    a(href=data.link).about__text-content_link #{data.link_title}
+            .about__img-content
+                img(src="static/img/assets/about/" + data.img alt=data.title)
