@@ -5,6 +5,8 @@ html(class="no-js", lang="en")
     include ../modules/footer/footer
     include ../modules/header/header
     include ../modules/about/about
+    include ../modules/lastest/lastest
+    include ../modules/gallery/gallery
 
     head
         +head(head.defaults)
@@ -16,6 +18,8 @@ html(class="no-js", lang="en")
         .page__content
 
             +about(about.defaults)
+
+            +lastest(lastest.defaults)
 
             .page__footer
                 +footer()

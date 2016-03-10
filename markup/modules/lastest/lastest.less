@@ -1,0 +1,124 @@
+.page__lastest {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    width: 1306px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 4;
+    position: relative;
+}
+
+.lastest__text-content_title {
+    display: inline-block;
+    font-family: @DroidSerif;
+    font-weight: 400;
+    font-size: 60px;
+    color: @baseColor;
+    line-height: 51px;
+    margin: 0;
+    padding: 0;
+
+    &:after {
+        content: ' ';
+        display: block;
+        height: 3px;
+        width: 90px;
+        background-color: @baseColor;
+        margin: 10px 0 0 0;
+    }
+}
+
+.lastest_container {
+    padding-top: 90px;
+    text-align: left;
+
+    &:after {
+        content: ' ';
+        display: block;
+        clear: both;
+        float: none;
+    }
+}
+
+.lastest__item {
+    width: 368px;
+    float: left;
+    padding-bottom: 50px;
+}
+.lastest__item_center {
+    padding-top: 85px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.lastest__item_img-container {
+    width: 338px;
+    height: 236px;
+    position: relative;
+    background-color: #373737;
+    box-shadow: 0 0 80px rgba(0,0,0,.3);
+
+    img {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        box-shadow: 0 0 80px rgba(0,0,0,.3);
+    }
+ }
+.lastest__item_title {
+    color: @baseColor;
+    font-family: @DroidSerif;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 70px 0 0 0;
+    padding: 0;
+    font-weight: 400;
+
+    &:after {
+        content: ' ';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: @baseColor;
+        margin-top: 17px;
+    }
+}
+.lastest__item_text_wrap {
+    margin: 27px 0;
+}
+.lastest__item_text {
+    color: #d3d3d3;
+    font-family: @RalewayRegular;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.lastest__item_link {
+    font-family: @RalewayBold;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @baseColor;
+    display: inline-block;
+
+    img {
+        padding-left: 20px;
+    }
+
+    &:after {
+        content: ' ';
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: @baseColor;
+        transition: width .7s linear;
+        margin-top: 5px;
+    }
+    &:hover {
+        &:after {
+            width: 90%;
+            transition: width .5s linear;
+        }
+    }
+}
