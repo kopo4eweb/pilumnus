@@ -1,0 +1,20 @@
+mixin gallery(data)
+    section.page__gallery
+        h2.gallery__title= data.title
+        .gallery__table
+            .gallery__table_row
+                div(class= 'gallery__table_col gallery__table_col-1')
+                    img(src= 'static/img/assets/gallery/' + data.item[0].img alt= data.item[0].title class='gallery__item gallery__item_float--right')
+                    img(src= 'static/img/assets/gallery/' + data.item[1].img alt= data.item[1].title class='gallery__item gallery__item_float--right')
+                div(class= 'gallery__table_col gallery__table_col-2')
+                    .gallery__item_row
+                        img(src= 'static/img/assets/gallery/' + data.item[2].img alt= data.item[2].title class='gallery__item')
+                        img(src= 'static/img/assets/gallery/' + data.item[3].img alt= data.item[3].title class='gallery__item gallery__item_margin--right-0')
+                    .gallery__item_row
+                        img(src= 'static/img/assets/gallery/' + data.item[4].img alt= data.item[4].title class='gallery__item gallery__item_float--left gallery__item_margin--right-0')
+                    .gallery__item_row
+                        img(src= 'static/img/assets/gallery/' + data.item[5].img alt= data.item[5].title class='gallery__item gallery__item_float--left')
+                        img(src= 'static/img/assets/gallery/' + data.item[6].img alt= data.item[6].title class='gallery__item gallery__item_float--left gallery__item_margin--right-0')
+
+        .gallery__button_wrap
+            a(href= data.link class= 'gallery__link')= data.link_title
