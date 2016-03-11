@@ -1,0 +1,127 @@
+.page__contact {
+    padding-top: 155px;
+    min-height: 794px;
+    position: relative;
+    z-index: 3;
+}
+
+.contact__box {
+    width: 1302px;
+    min-height: 560px;
+    background-color: #373737;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 0 80px rgba(0,0,0,.3);
+}
+.contact__text-content {
+    width: 471px;
+    height: 432px;
+    margin-top: 68px;
+    margin-right: 63px;
+    display: inline-block;
+    float: right;
+}
+.contact__text-content_title {
+    font-family: @DroidSerif;
+    font-weight: 400;
+    font-size: 60px;
+    color: @baseColor;
+    line-height: 51px;
+    margin: 0;
+    padding: 0;
+
+    &:after {
+        content: ' ';
+        display: block;
+        height: 3px;
+        width: 90px;
+        background-color: @baseColor;
+        margin: 10px 0 0 0;
+    }
+}
+
+.contact__form {
+    font-family: @RalewayRegular;
+    font-size: 16px;
+    font-weight: 100;
+    padding-top: 40px;
+
+    .form_input_row {
+        margin-bottom: 30px;
+
+        &:after {
+            content: ' ';
+            display: table;
+            clear: both;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .form__input {
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #737373;
+        padding: 17px 8px;
+        color: #d3d3d3;
+        display: inline-block;
+        outline: none;
+
+        &:focus {
+            border: 1px solid @baseColor;
+        }
+
+        &::placeholder {
+            color: #d3d3d3;
+        }
+    }
+
+    .form__input_text {
+        width: 214px;
+    }
+    .form__input_email {
+        float: right;
+    }
+    .form__input_textarea {
+        resize: none;
+        width: 100%;
+        height: 110px;
+    }
+}
+
+.contact__form_button_wrap {
+    margin-top: 70px;
+}
+.contact__form_button {
+    height: 55px;
+    width: 178px;
+    background-color: transparent;
+    border: 1px solid @baseColor;
+    color: @baseColor;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-family: @RalewayBold;
+    font-size: 16px;
+    transition: all .3s;
+
+    &:hover {
+        background-color: @baseColor;
+        color: #ffffff;
+        transition: all .3s;
+    }
+}
+
+.contact__img-content {
+    box-shadow: 0 0 80px rgba(0,0,0,.3);
+    position: absolute;
+    top: -50px;
+    left: 69px;
+    img {
+        display: block;
+    }
+}

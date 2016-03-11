@@ -1,0 +1,16 @@
+mixin contact(data)
+    section.page__contact
+        .contact__box
+
+            .contact__img-content
+                img(src="static/img/assets/contact/" + data.img alt=data.title)
+
+            .contact__text-content
+                h2.contact__text-content_title #{data.title}
+                form#contact__form.contact__form
+                    .form_input_row
+                        input(type= 'text' placeholder= data.input_name required id= 'input_name').form__input_text.form__input
+                        input(type= 'text' placeholder= data.input_email required id= 'input_email').form__input_text.form__input_email.form__input.
+                    textarea(placeholder= data.input_message rows= '4' required id= 'input_message').form__input_textarea.form__input
+                    .contact__form_button_wrap
+                        button(type= 'submit').contact__form_button #{data.link_title}
