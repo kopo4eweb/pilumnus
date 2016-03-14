@@ -6,14 +6,14 @@
     console.log(requiredElements);
 
     for (var i = 0; i < requiredElements.length; i++) {
-        //console.log(requiredElements[i]);
+        // console.log(requiredElements[i]);
         requiredElements[i].required = false;
     }
 
     form.onsubmit = function (e) {
         e.preventDefault();
 
-        //console.log('click button submit');
+        // console.log('click button submit');
         var countError = 0;
         for (i = 0; i < requiredElements.length; i++) {
             if (requiredElements[i].required === false) {
