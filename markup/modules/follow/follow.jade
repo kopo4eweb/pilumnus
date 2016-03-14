@@ -1,0 +1,7 @@
+mixin follow(data)
+    .page__follow
+        .follow_box
+            - for (var i = 0; i < data.item.length; i++) {
+            a(href= data.item[i].link).follow__item
+                img(src= 'static/img/assets/follow/' + data.item[i].img, title= data.item[i].title)
+            - }

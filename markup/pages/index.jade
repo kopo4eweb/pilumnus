@@ -8,6 +8,7 @@ html(class="no-js", lang="en")
     include ../modules/lastest/lastest
     include ../modules/gallery/gallery
     include ../modules/contact/contact
+    include ../modules/follow/follow
 
     head
         +head(head.defaults)
@@ -25,6 +26,8 @@ html(class="no-js", lang="en")
             +gallery(gallery.defaults)
 
             +contact(contact.defaults)
+
+            +follow(follow.defaults)
 
             .page__footer
                 +footer()
