@@ -5,11 +5,13 @@ mixin lastest(data)
             - for (var i = 0; i < data.item.length; i++) {
                 - var lastestItemCenter = ((i+1) % 2) == 0 ? 'lastest__item_center' : '';
                 article(class= 'lastest__item ' + lastestItemCenter )
-                    .lastest__item_img-container
-                        img(src= 'static/img/assets/lastest/' + data.item[i].img alt=data.item[i].title title=data.item[i].title)
-                    h2.lastest__item_title= data.item[i].title
-                    .lastest__item_text_wrap
-                        p.lastest__item_text= data.item[i].text
-                    a.lastest__item_link(href= data.item[i].link) #{data.item[i].link_title}
-                        img(src='static/img/assets/lastest/button-arrow-right.png' title=data.item[i].link_title)
+                    .lastest__item_container
+                        .lastest__item_img-container
+                            img(src= 'static/img/assets/lastest/' + data.item[i].img alt=data.item[i].title title=data.item[i].title)
+                        .lastest__item_text-container
+                            h2.lastest__item_title= data.item[i].title
+                            .lastest__item_text_wrap
+                                p.lastest__item_text= data.item[i].text
+                            a.lastest__item_link(href= data.item[i].link) #{data.item[i].link_title}
+                                img(src='static/img/assets/lastest/button-arrow-right.png' title=data.item[i].link_title)
             - }
