@@ -33,6 +33,19 @@
 
     .gallery__item {
         position: absolute;
+        overflow: hidden;
+
+        img {
+            vertical-align: bottom;
+            transition: all .3s linear .1s;
+        }
+         &:hover {
+             outline: 1px solid @baseColor;
+             img {
+                 transition: all .3s linear .1s;
+                 transform: scale(0.99) rotate(1deg);
+             }
+         }
     }
     .gallery__item-1 {
         top: 66px;
@@ -106,6 +119,12 @@
         height: 670px;
         width: 790px;
         margin: 20px auto 0 auto;
+
+        .gallery__item {
+           img {
+               width: 100%;
+           }
+        }
 
         .gallery__item-1 {
             top: 66px;
