@@ -2,7 +2,6 @@ doctype html
 html(class="no-js", lang="en")
 
     include ../modules/head/head
-    include ../modules/footer/footer
     include ../modules/header/header
     include ../modules/about/about
     include ../modules/lastest/lastest
@@ -28,9 +27,6 @@ html(class="no-js", lang="en")
             +contact(contact.defaults)
 
             +follow(follow.defaults)
-
-            .page__footer
-                +footer()
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();
