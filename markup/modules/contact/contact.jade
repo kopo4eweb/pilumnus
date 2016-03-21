@@ -9,8 +9,32 @@ mixin contact(data)
                 h2.contact__text-content_title #{data.title}
                 form#contact__form.contact__form
                     .form_input_row
-                        input(type= 'text' placeholder= data.input_name required id= 'input_name').form__input_text.form__input
-                        input(type= 'text' placeholder= data.input_email required id= 'input_email').form__input_text.form__input_email.form__input
-                    textarea(placeholder= data.input_message rows= '4' required id= 'input_message').form__input_textarea.form__input
+                        .form__element
+                            input(
+                                type= 'text'
+                                placeholder= data.input_name
+                                data-validation= 'length alphanumeric'
+                                data-validation-length= '3-12'
+                                data-validation-error-msg= 'Введите имя (от 3 до 12 символов)'
+                                data-validation-error-msg-alphanumeric= 'Только алфавитно-цифровые символы'
+                                ).form__input_text.form__input
+
+                        .form__element.form__element_email
+                            input(
+                                type= 'text'
+                                placeholder= data.input_email
+                                data-validation= 'email'
+                                data-validation-error-msg= 'Введите email'
+                                ).form__input_text.form__input_email.form__input
+
+                    .form__element--block
+                        textarea(
+                            placeholder= data.input_message
+                            rows= '4'
+                            data-validation= 'length'
+                            data-validation-length='min1'
+                            data-validation-error-msg= 'Введите сообщение'
+                            ).form__input_textarea.form__input
+
                     .contact__form_button_wrap
                         button(type= 'submit').contact__form_button #{data.link_title}
