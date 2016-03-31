@@ -14,6 +14,7 @@
 + JS: jQuery
 + jQuery plugin: Magnific, popup для изображений в галереи [ссылка](http://dimsemenov.com/plugins/magnific-popup/)
 + jQuery plugin: jQuery form Validator, валидация форм [ссылка](http://formvalidator.net/)
++ Modernizr: заменяем SVG на PNG [ссылка](https://modernizr.com/)
 + Сборщик: TARS [ссылка](https://github.com/tars/tars-cli):
     + LESS
     + Jade
